@@ -1,0 +1,48 @@
+/*custom kreirane animacije  */
+
+@keyframes slide-top {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-top { animation: slide-top 1s linear ; }
+        
+        @keyframes slide-bottom {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-bottom { animation: slide-bottom 1s linear ; }
+        
+        @keyframes slide-left {
+            0% { opacity: 0; transform: translateX(50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .slide-left { animation: slide-left 1s linear ; }
+        
+        @keyframes slide-right {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .slide-right { animation: slide-right 1s linear ; }
+        
+      @keyframes zoom {
+            0% { opacity: 0; transform: scale(0); }
+            100% { opacity: 1; transform: scale(1); }
+        }    
+        
+        
+        .zoom{
+            animation:zoom 1s linear;
+            animation-fill-mode:forwards;
+          
+        }
+        
+     
+        
+
+.animation{
+
+position:relative;}

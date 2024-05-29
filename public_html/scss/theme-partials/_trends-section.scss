@@ -1,0 +1,198 @@
+
+.trends{
+    padding-top:75px;
+    margin-bottom:60px;
+
+    h2{
+
+  @include h2-style-and-font-size(2.2rem);
+  
+    }
+    //h2 ends
+
+    .trends-item{
+        position:relative;
+        margin-bottom:60px;
+
+        .trends-item-description{
+
+            font-size: 1.2rem;
+            position:absolute;
+            bottom:-40px;
+            background-color:white;
+            padding:5px 0 10px;
+            margin-bottom:30px;
+
+            &:last-of-type{
+                margin-bottom:0;
+            }
+
+
+            .trends-item-date{
+                font-family:$bodoniBook;
+                margin-bottom:10px;
+                font-size: 1rem;
+                letter-spacing: 0.1rem;
+                line-height: 2.4rem;
+
+            }
+
+        }
+    }
+    //trends item ends
+}
+//trends ends
+
+@media (min-width:576px){
+
+    .trends{
+
+        h2{
+            &:before{
+
+                left:226px;
+            }
+        }
+        //h2 ends
+
+        .trends-item{
+
+
+            .trends-item-description{
+                font-size: 1.6rem;
+                left:27px;
+                bottom:-40px;
+                width:90% !important;
+
+                .trends-item-date{
+                    margin-bottom:17px;
+                    font-size: 1.2rem;
+
+                }
+
+            }
+        }
+    }
+    //trends ends
+}
+
+
+@media (min-width:768px){
+    .trends{
+        margin-bottom:70px;
+        h2{
+            @include h2-style-and-font-size(3.2rem);
+              text-align:left;
+
+            &:before{
+
+                left:0px;
+
+            }
+        }
+        //h2 ends
+
+        .trends-item{
+            position:relative;
+            margin-bottom:60px;
+            padding-top:20px;
+            &:hover{
+                padding-top:5px;
+                transition: all 0.5s ease-in;
+            }
+
+            .trends-item-description{
+
+                font-size: 1.2rem;
+                left:12px;
+                overflow: hidden;
+                line-height: 2.4rem;
+                max-height:2.4em * 3.5;
+                bottom:-65px;
+
+                .trends-item-date{
+                    font-size: 1rem;
+
+                }
+
+            }
+        }
+        //trends item ends
+    }
+    //trends ends
+
+}
+
+
+@media (min-width:992px){
+    .trends{
+
+        h2{
+            margin-bottom:24px;
+            &:before{
+                bottom:-25px;
+            }
+        }
+        //h2 ends
+        .trends-item{
+            padding-top:43px;
+
+            &:hover{
+                padding-top:25px;
+                transition: all 0.5s ease-in;
+            }
+            .trends-item-description{
+
+                font-size: 1.2rem;
+                left:15px;
+
+                .trends-item-date{
+                    font-size: 1rem;
+
+                }
+
+            }
+        }
+        //trends item ends
+
+    }
+    //trends ends
+
+}
+
+
+@media (min-width:1200px){
+    .trends{
+
+        .trends-item{
+
+
+            .trends-item-description{
+
+                font-size: 1.6rem;
+                left:27px;
+                bottom:-50px;
+                padding:56px 18px;
+                width:313px;
+
+                .trends-item-date{
+                    font-size: 1.4rem;
+                    margin-bottom:1.7rem;
+                    letter-spacing: 0.1rem;
+                    line-height: 1.7rem;
+
+                }
+
+            }
+        }
+        //trends item ends
+
+    }
+    //trends ends
+
+}
+
+
+
+
+

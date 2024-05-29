@@ -1,0 +1,184 @@
+
+.professionals{
+    margin-bottom:67px;
+
+    h2{
+        @include h2-style-and-font-size(2.2rem);
+    }
+    //h2 ends
+
+
+
+    .owl-carousel {
+
+        .professionals-txt{
+            h3{
+                a{
+                    @include h4();
+                }
+
+            }
+
+            p{
+                color: #1E1E1E;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 23px;
+            }
+        } //professionals txt ends
+
+        .owl-dots {
+            .owl-dot {
+                span {
+                    background-color: #ECD9D9;
+                    opacity: 0.34;
+
+                }
+            }
+
+            .owl-dot.active span {
+                background-color: #ECD9D9;
+
+                opacity: 1;
+
+            }
+
+            &.disabled {
+                display: block;
+            }
+        }  //owl dots ends
+      
+
+    } //owl carousel ends
+} //professionals ends
+
+
+@media (min-width:576px){
+    .professionals{
+        h2{
+
+            &:before{
+
+                left:224px;
+            }
+        }
+        .professionals-txt{
+
+
+
+        }
+    }//professionals
+}//576px breakpoint ends
+
+
+@media (min-width:768px){
+    .professionals{
+
+        h2{
+
+
+            @include h2-style-and-font-size(3.0rem);
+            text-align:left;
+            &:before{
+
+                left:0px;
+            }
+        }
+        //h2 ends
+
+
+
+
+        .professionals-img{
+            padding:40px
+        }
+
+        .owl-carousel {
+
+            border:1px solid $border-color;
+
+            .professionals-txt{
+
+                padding:0 50px 0 50px;
+
+                h3{
+                    a{
+                        @include h4(3.0rem);
+                    }
+
+                }
+                p{
+                    font-size:16px;
+                }
+            }
+            //professional txt ends
+
+            .professionals-img{
+                a{
+
+                    overflow:hidden;
+                    img{
+                        display:block;
+                        transition:all 0.3s ease-in;
+                        &:hover{
+                            transform:scale(1.1);
+                        }
+                    }
+                }
+
+            }
+            //professionals-img ends
+        }
+        //owl carousel ends
+    }
+    //professionals ends
+}//768px breakpoint ends
+
+
+@media (min-width:992px){
+    .professionals{
+
+        h2{
+
+            @include h2-style-and-font-size(3.0rem);
+            text-align:left;
+            &:before{
+
+                left:0px;
+            }
+        }//h2 ends
+
+
+
+
+        .professionals-img{
+            padding:54px 107px 54px 95px;
+        }
+
+        .owl-carousel {
+
+            border:1px solid $border-color;
+
+            .professionals-txt{
+
+                padding:85px 190px 102px 0px;
+
+                h3{
+                    a{
+                        @include h4(3.0rem);
+                    }
+
+                }
+
+            } //professional text ends
+
+            p{
+                font-size:16px;
+            }
+
+        }//owl carousel ends
+    }//professionals ends
+} //992px breakpoint ends
+

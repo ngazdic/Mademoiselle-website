@@ -1,6 +1,40 @@
 
+$base-font:$lato;
+$title-font:$bodoniBook;
 
 img{
-    
+
     max-width:100%;
 }
+
+body{
+
+    font-family: $base-font;
+    font-weight:$font-weight-light;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $title-font;
+
+}
+
+main{
+
+    padding-top:67px;
+}
+
+@media (min-width:992px){
+
+    main{
+        padding-top:97px;
+    }
+}
+
+
+
+
+
+
+
+
+

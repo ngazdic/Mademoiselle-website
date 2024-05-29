@@ -1,0 +1,36 @@
+
+$title-color:  #FFFFFF;
+
+.lead-section{
+
+    padding:150px 0 200px;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+
+    h1{
+        color:$title-color;
+        font-size: 3.0rem;
+        font-weight:$font-weight-light!important;
+        letter-spacing: 1.0rem;
+        line-height: 6.4rem;
+    }
+
+
+}// lead section ends
+
+@media (min-width:768px){
+
+    .lead-section{
+        padding:218px 0 269px;
+
+        h1{
+            font-size: 6.0rem;
+            font-weight: $font-weight-medium;
+            letter-spacing: 2.0rem;
+            line-height: 8.4rem;
+
+        }
+    }
+    //lead section ends
+}

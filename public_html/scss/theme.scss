@@ -1,7 +1,13 @@
 
 @import "theme-partials/_override-bootstrap.scss";
+@import "theme-partials/_functions.scss";
 @import "bootstrap.scss";
 @import "theme-partials/_fonts.scss";
 @import "theme-partials/_animations.scss";
 @import "theme-partials/_base.scss";
-@import "theme-partials/_home-page.scss";
+@import "theme-partials/_header.scss";
+@import "theme-partials/_lead-section.scss";
+@import "theme-partials/_trends-section.scss";
+@import "theme-partials/_services-section.scss";
+@import "theme-partials/_professionals-section.scss";
+@import "theme-partials/_footer.scss";

@@ -1,0 +1,67 @@
+
+//button 
+@mixin button-style {
+    transition: all 0.2s ease-in;
+    padding:13px 36px;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+    text-align: center;
+    border:1px black solid;
+    margin-left:40px;
+    margin-bottom:60px;
+    transition:all 0.3s ease-in;
+    &:hover {
+        color:white;
+        background-color:black;
+
+    }
+}
+
+//h2
+@mixin h2-style-and-font-size($font-size) {
+    font-family: $bodoniBook;
+    font-size: $font-size;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    margin-bottom: 70px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left: 116px;
+        background-color: #ECD9D9;
+        width: 74px;
+        height: 1px;
+    }
+}
+
+
+//h3
+
+@mixin h3($font-size, $padding:50px 40px 50px 40px){
+
+
+    padding:$padding;
+    height:100%;
+    margin-bottom:0;
+    font-family: $lato;
+    font-size: $font-size;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 4.4rem;
+
+}
+
+//h4
+@mixin h4($font-size:2.0rem){
+    font-family: Lato;
+    font-size: $font-size;
+    letter-spacing: 0;
+    line-height: 44px;
+
+}

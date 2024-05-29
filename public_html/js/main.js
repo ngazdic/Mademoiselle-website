@@ -1,7 +1,7 @@
 
-$(document).ready(function(){
-    
-        function animation() {
+$(document).ready(function () {
+
+    function animation() {
 
         let windowHeight = $(window).height();//koliki je ekran, visina dakle
 
@@ -14,7 +14,7 @@ $(document).ready(function(){
             let position = $(this).offset().top; //dakle uzimamo top od svakog elementa kros koji je each metoda prosla
             let animationName = $(this).attr('data-animation');//ovde cuvamo preko targetiranja klase koja animaciaj se izvrsava
 
-            let delay = $(this).attr('data-delay');//ovde uzimamo i cuvamo attribut data delauy
+            let delay = $(this).attr('data-delay');//ovde uzimamo i cuvamo attribut data delay
 
 
             if (position < windowHeight + scroll) {
@@ -30,16 +30,53 @@ $(document).ready(function(){
 
 
 
-
-
-
     $(window).on('scroll', function () {
         animation(); //funkciju pozivamo na scroll
-
 
 
     });
     animation();
 
-    
+    //owl carousel
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 100,
+        dots: true,
+        dotsEach: true,
+        items: 1,
+        responsive: {
+            0: {
+
+            },
+            360: {
+
+            },
+            768: {
+
+            }
+        }
+
+    });
+
+
 });
+
+//nav bar animation from 360px to 576px
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("spinButton").addEventListener("click", function () {
+        this.classList.toggle("rotate-45");
+    });
+
+
+    let items = document.querySelectorAll('.services-item-1');
+
+    for (let i = 0; i < items.length; i++) {
+        if (i % 2 === 1) {
+            items[i].classList.add('even');
+        }
+    }
+
+
+});
+
+

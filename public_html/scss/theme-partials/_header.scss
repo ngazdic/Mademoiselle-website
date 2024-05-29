@@ -1,0 +1,96 @@
+
+.navbar{
+
+    background-color:white;
+
+    padding:15px 0 15px;
+    img{
+
+        width:60%;
+    }
+
+    .navbar-toggler{
+        border:0px solid black;
+
+        #spinButton {
+            transition: transform 0.3s ease-in-out;
+
+            &.rotate-45 {
+                transform: rotate(45deg);
+            }
+        }
+        //#spinButton ends
+        //class for bar animation
+    }
+
+    li{
+        a{
+            border-bottom:1px solid $gray-900;
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.7rem;
+            padding-left:0 !important;
+
+
+        }
+    }
+    // li ends
+
+}
+// navbar ends
+
+
+@media (min-width:768px){
+    .navbar{
+        padding:15px 0 15px;
+
+        img{
+            width:80%;
+        }
+        li{
+            a{
+                border-bottom:0px solid $gray-900;
+                position:relative; /* Add this line */
+                &:before{
+                    content: '';
+                    position:absolute;
+                    bottom:0; /* Change top to bottom */
+                    left:0;
+                    background-color:$border-color;
+                    width:0%;
+                    height:2px; /* Add height to create the line */
+                    opacity:0;
+                    transition:all 0.3s ease-in;
+                }
+                &:hover:before{ /* Correct the hover selector */
+                    opacity:1;
+                    width:100%;
+                }
+            }
+            // a ends
+        }
+        // li ends
+    }
+    // navbar ends
+}
+
+@media (min-width:992px){
+    .navbar{
+        padding:30px 0 30px;
+        li{
+            a{
+                margin-left:72px !important;
+            }
+        }
+    }
+    //navbar ends
+}
+
+
+
+
+
+
+
+
+

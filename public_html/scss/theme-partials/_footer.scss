@@ -1,0 +1,37 @@
+
+$social-icons-color:$border-color;
+
+footer{
+padding:27px 0px 15px;
+    .social-icons{
+
+        margin-bottom:18px;
+        span{
+
+            margin-left:31px;
+            color:$social-icons-color;
+            &:first-of-type{
+                margin-left:0;
+            }
+        }
+        //span ends
+
+    }
+    //social icons ends
+
+    p{
+        font-size: 1.2rem;
+        letter-spacing: -0.17px;
+        line-height: 4.1rem;
+
+    }
+
+}
+//footer ends
+
+@media (min-width:768px){
+    footer{
+        padding:47px 0px 25px;
+    }
+    
+}

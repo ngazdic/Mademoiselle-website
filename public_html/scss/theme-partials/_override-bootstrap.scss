@@ -1,10 +1,24 @@
 html{
-    
+
     font-size:10px;
 }
 
-$font-size-base:1.6rem;
-$grid-gutter-width:12px;
+
+$border-color:#ECD9D9;
+
 
 //override bootstrap variables
+
+$font-size-base:1.6rem;
+$grid-gutter-width:12px;
+$font-weight-medium:500;
+$gray-900:#1E1E1E;
+$navbar-light-color:$gray-900;
+$navbar-light-active-color:#cccccc;
+$navbar-light-hover-color:#cccccc;
+
+
+$link-color:$gray-900;
+$link-hover-color:#cccccc;
+$link-hover-decoration:none;
 

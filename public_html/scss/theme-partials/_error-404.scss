@@ -1,0 +1,13 @@
+.lead-section{
+    margin-bottom:0;
+    .container{
+        padding-top:100px;
+        a{
+            @include button-style();
+            color:white;
+            border-color: white;
+        }
+    }
+}
+
+

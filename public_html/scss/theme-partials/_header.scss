@@ -33,11 +33,11 @@
 
 
         }
-    }
-    // li ends
+    }  // li ends
 
-}
-// navbar ends
+  
+}// navbar ends
+
 
 
 @media (min-width:768px){
@@ -48,42 +48,49 @@
             width:80%;
         }
         li{
+            
+           
             a{
                 border-bottom:0px solid $gray-900;
                 position:relative; /* Add this line */
+                margin-left:50px;
+                 
+              
                 &:before{
                     content: '';
                     position:absolute;
-                    bottom:0; /* Change top to bottom */
+                    top:20px; /* Change top to bottom */
                     left:0;
                     background-color:$border-color;
                     width:0%;
-                    height:2px; /* Add height to create the line */
+                    height:1px; /* Add height to create the line */
                     opacity:0;
                     transition:all 0.3s ease-in;
                 }
-                &:hover:before{ /* Correct the hover selector */
+                &:hover:before,
+                    &.active:before{ /* Correct the hover selector */
                     opacity:1;
-                    width:100%;
+                    width:92%;
                 }
-            }
-            // a ends
-        }
-        // li ends
-    }
-    // navbar ends
-}
+            }// a ends
+            
+        }// li ends
+        
+    }// navbar ends
+    
+}//768px min-width ends
 
 @media (min-width:992px){
     .navbar{
-        padding:30px 0 30px;
+        padding:30px 0;
         li{
             a{
                 margin-left:72px !important;
+                padding-right:0px !important;
             }
         }
-    }
-    //navbar ends
+    }//navbar ends
+    
 }
 
 

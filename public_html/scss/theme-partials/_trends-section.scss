@@ -1,12 +1,12 @@
 
 .trends{
-    padding-top:75px;
+    
     margin-bottom:60px;
 
     h2{
 
-  @include h2-style-and-font-size(2.2rem);
-  
+        @include h2-style-and-font-size(2.2rem);
+
     }
     //h2 ends
 
@@ -37,11 +37,11 @@
 
             }
 
-        }
-    }
-    //trends item ends
-}
-//trends ends
+        }//trends-item-description ends
+    }//trends item ends
+    
+}//trends ends
+
 
 @media (min-width:576px){
 
@@ -52,8 +52,8 @@
 
                 left:226px;
             }
-        }
-        //h2 ends
+        } //h2 ends
+  
 
         .trends-item{
 
@@ -71,35 +71,30 @@
                 }
 
             }
-        }
-    }
-    //trends ends
-}
+        } //trends-item ends
+    } //trends ends
+   
+}//576px breakpoint ends
 
 
 @media (min-width:768px){
     .trends{
-        margin-bottom:70px;
+        margin-bottom:70px !important;
+        
         h2{
-            @include h2-style-and-font-size(3.2rem);
-              text-align:left;
+            @include h2-style-and-font-size($font-size:3.2rem);
+            text-align:left;
 
             &:before{
 
                 left:0px;
 
             }
-        }
-        //h2 ends
+        } //h2 ends
+       
 
         .trends-item{
-            position:relative;
-            margin-bottom:60px;
-            padding-top:20px;
-            &:hover{
-                padding-top:5px;
-                transition: all 0.5s ease-in;
-            }
+
 
             .trends-item-description{
 
@@ -108,7 +103,7 @@
                 overflow: hidden;
                 line-height: 2.4rem;
                 max-height:2.4em * 3.5;
-                bottom:-65px;
+                bottom:-30px;
 
                 .trends-item-date{
                     font-size: 1rem;
@@ -116,12 +111,14 @@
                 }
 
             }
-        }
-        //trends item ends
-    }
-    //trends ends
+        } //trends item ends
+       
+    }//trends ends
+    
+}//768px breakpoint ends
 
-}
+
+
 
 
 @media (min-width:992px){
@@ -138,13 +135,18 @@
             padding-top:43px;
 
             &:hover{
-                padding-top:25px;
-                transition: all 0.5s ease-in;
+                padding-top:25px !important;
+                transition: all 0.5s ease-in !important;
+
             }
             .trends-item-description{
 
                 font-size: 1.2rem;
                 left:15px;
+                bottom:55px;
+
+
+                max-height:2.4em * 3;
 
                 .trends-item-date{
                     font-size: 1rem;
@@ -152,14 +154,13 @@
                 }
 
             }
-        }
-        //trends item ends
+        }//trends item ends
+        
 
-    }
-    //trends ends
+    }  //trends ends
+   
 
-}
-
+}//992px breakpoint ends
 
 @media (min-width:1200px){
     .trends{
@@ -170,9 +171,11 @@
             .trends-item-description{
 
                 font-size: 1.6rem;
-                left:27px;
-                bottom:-50px;
-                padding:56px 18px;
+                left:18px;
+                bottom:45px;
+
+                max-height:2.4em * 2.8;
+                padding:22px 18px 57px 19px;
                 width:313px;
 
                 .trends-item-date{
@@ -184,13 +187,13 @@
                 }
 
             }
-        }
-        //trends item ends
+        }  //trends item ends
+      
 
-    }
-    //trends ends
+    }//trends ends
+    
 
-}
+}//1200px breakpoint ends
 
 
 

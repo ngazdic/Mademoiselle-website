@@ -43,7 +43,7 @@
 
 //h3
 
-@mixin h3($font-size, $padding:50px 40px 50px 40px){
+@mixin h3($font-size, $padding:50px 40px 50px 40px, $line-height:4.4rem){
 
 
     padding:$padding;
@@ -53,7 +53,7 @@
     font-size: $font-size;
     font-weight: 300;
     letter-spacing: 0;
-    line-height: 4.4rem;
+    line-height:$line-height;
 
 }
 
@@ -64,4 +64,15 @@
     letter-spacing: 0;
     line-height: 44px;
 
+}
+
+//zoom animations for images
+
+@mixin scalable-hover($scale: 1.1, $transition-duration: 0.3s, $transition-timing: ease-in) {
+    display: block;
+    transition: all $transition-duration $transition-timing;
+
+    &:hover {
+        transform: scale($scale);
+    }
 }

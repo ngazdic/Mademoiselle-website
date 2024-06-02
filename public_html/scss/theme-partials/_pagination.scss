@@ -1,0 +1,33 @@
+$active-class-color:$border-color;
+.pagination{
+
+    .page-link{
+        color: #1E1E1E;
+        font-family: "Bodoni 72";
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+    }
+
+.page-item {
+    .page-link {
+        &:hover {
+            background-color: $border-color; // Default hover color for .page-link
+        }
+    }
+
+    &.active {
+        .page-link {
+            background:pink;
+          
+
+            &:hover {
+              background:pink;
+               
+            }
+        }
+    }
+}
+}

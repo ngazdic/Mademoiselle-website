@@ -1,0 +1,109 @@
+
+
+.trends{
+    .about-description{
+        margin-bottom:70px;
+        h4{
+            text-align: center;
+            @include h4();
+        }
+
+        p{
+            text-align:center;
+        }
+    }
+
+   form {
+    padding-right:20px;
+    padding-left: 20px;
+
+    input {
+        font-family: $bodoniBook;
+        font-style: italic;
+        border:1px black solid;
+        padding:25px 10px;
+      
+         &:focus{
+                outline: 2px solid $border-color;
+                box-shadow: none;
+            }
+    }
+
+    input::placeholder,
+   {
+        font-family: $bodoniBook;
+        font-style: italic;
+        color:black;
+    }
+    
+    a{
+       right:20px;
+      
+            
+    }
+
+    .trends-item{
+
+    }
+}
+}
+
+
+
+@media(min-width:768px){
+    
+    .trends{
+        margin-bottom:0;
+    .about-description{
+  
+        h4{
+          
+            @include h4($font-size:3.0rem);
+             text-align: left;
+        }
+
+        p{
+            text-align: left;
+        }
+    }
+
+    form{
+        padding-right:0;
+        padding-left:0;
+
+    }
+
+  
+}
+}
+
+@media(min-width:992px){
+    
+    .trends{
+        margin-bottom:0;
+    .about-description{
+  
+        h4{
+          
+            @include h4($font-size:4.4rem);
+             text-align: left;
+        }
+
+        p{
+            text-align: left;
+            font-size:20px;
+        }
+    }
+
+  
+  
+
+}
+
+  
+}
+
+
+
+
+

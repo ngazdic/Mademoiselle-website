@@ -117,11 +117,27 @@ $service-bg-color-2:#ECD9D9;
 
         .services-item-1{
             padding:5px 0;
+          
 
-            &.even{
+            &.even, 
+           {
                 margin-top:-1px;
-                padding-bottom:11px;
+                padding-bottom:10px;
+                padding-top:94px;
+                align-items: center;
+                
+               
             }
+            
+            &.even-exception{
+                 margin-top:-1px;
+                padding-bottom:8px;
+                padding-top:90px;
+                align-items: center;
+               
+            }
+            
+          
 
             h3{
                 @include h3(3.2rem, 20px 40px 20px 40px);
@@ -162,8 +178,16 @@ $service-bg-color-2:#ECD9D9;
         .services-item-1{
 
             &.even{
-                margin-top:-1px;
+            
                 padding-bottom:13px;
+                padding-top:50px;
+            }
+            
+             &.even-exception{
+            
+                padding-bottom:8px;
+                padding-top:45px;
+               
             }
 
             h3{
@@ -205,16 +229,35 @@ $service-bg-color-2:#ECD9D9;
 
         .services-item-1{
 
-            margin-bottom:-1px;
+      
+             padding-bottom:30px;
+                padding-top:6px;
 
-            &.even{
-                margin-top:-1px;
-                padding-bottom:18px;
+           &.even{
+              
+               padding-bottom:73px;
+                padding-top:35px;
+                
+                h3{
+                    padding:113px 95px 40px 95px;
+                }
             }
-
+            
+             &.even-exception{
+                 
+                
+              
+                padding-bottom:68px;
+                padding-top:30px;
+                
+                h3{
+                    padding:113px 95px 40px 95px;
+                }
+             
+            }
             h3{
 
-                padding:159px 95px 36px 95px;
+                padding:133px 95px 36px 95px;
                 font-size:3.6rem;
 
             }
@@ -226,6 +269,14 @@ $service-bg-color-2:#ECD9D9;
 
         }
         //services item 1 end
+        
+        .services-item-2{
+            figure{
+                
+                margin-bottom:-1px !important;
+            }
+            
+        }
     }
     //services end
 }

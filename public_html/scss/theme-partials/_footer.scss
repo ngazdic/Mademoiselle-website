@@ -6,13 +6,21 @@ padding:27px 0px 15px;
     .social-icons{
 
         margin-bottom:18px;
-        span{
+        a{
 
             margin-left:31px;
             color:$social-icons-color;
+          
+            
             &:first-of-type{
                 margin-left:0;
             }
+
+            span{
+                transition:all 0.5s ease-in;
+            &:hover{
+                transform: rotate(360deg);
+            }}
         }
         //span ends
 

@@ -1,6 +1,6 @@
 $active-class-color:$border-color;
 .pagination{
-
+margin-bottom:17px;
     .page-link{
         color: #1E1E1E;
         font-family: "Bodoni 72";
@@ -14,7 +14,7 @@ $active-class-color:$border-color;
 .page-item {
     .page-link {
         &:hover {
-            background-color: $border-color; // Default hover color for .page-link
+            background-color: $border-color; 
         }
     }
 

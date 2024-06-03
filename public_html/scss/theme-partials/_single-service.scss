@@ -1,11 +1,11 @@
 
 .single-service{
 
-    margin-bottom:0;
+    margin-bottom:100px;
     .single-service-description{
 
         h3{
-            @include h3(2.0rem, 0 0 0 0, 5.0rem);
+            @include h3(2.0rem, 0 0 0 0, 3.0rem);
 
         }
 
@@ -13,12 +13,13 @@
             font-size: 1.4rem;
         }
 
-    }
-}
+    }//single-service-description ends
+}//single-service ends
 
 @media (min-width:576px){
     .single-service{
-        padding-top:80px;
+        padding-top:50px;
+        margin-bottom:181px;
         .single-service-description{
 
             h3{
@@ -30,10 +31,11 @@
                 font-size: 1.6rem;
             }
 
-        }
-    }
+        }//single-service description
+    }//single-service ends
 
-}
+}//576px breakpoint-ends
+
 
 @media (min-width:768px){
     .single-service{
@@ -53,7 +55,7 @@
             margin-bottom:40px;
             h3{
 
-                @include h3(2.5rem, 0 0 0 0, 3.0rem);
+                @include h3(3.0rem, 0 0 0 0, 3.0rem);
 
             }
 
@@ -64,10 +66,10 @@
                 margin-bottom:0;
             }
 
-        }
-    }
+        }//single-service description ends
+    }//single-service ends
 
-}
+}//768px breakpoint ends
 
 
 
@@ -75,37 +77,44 @@
 @media (min-width:992px){
     .single-service{
         padding-top:150px;
-        padding-bottom:0;
-        margin-bottom:191px;
+        padding-bottom:150px;
+
         .single-service-description{
 
             h3{
                 @include h3(4.4rem, 0 0 0 0, 5.0rem);
-
             }
 
             p{
+                overflow:hidden;
                 font-size: 1.8rem;
                 height: 3 * 8rem;
-
             }
 
         }
-    }
 
-}
+        figure{
+            padding-bottom:0 !important;
+        }
+    }//single-service-ends
+
+}//992px breakpoint ends
 
 @media (min-width:1200px){
     .single-service{
-
+        padding-top:170px;
+        padding-bottom:181px;
         .single-service-description{
-
 
             p{
                 overflow:visible;
             }
 
         }
+    }//single-service ends
+
+    .trends{
+        padding-bottom:135px;
     }
 
-}
+}//1200px breakpoint ends

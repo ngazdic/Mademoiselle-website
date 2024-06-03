@@ -11,97 +11,141 @@
         p{
             text-align:center;
         }
-    }
+        
+     
+    }   //about-descritpion ends
+ 
 
-   form {
-    padding-right:20px;
-    padding-left: 20px;
+    form {
+        padding-right:20px;
+        padding-left: 20px;
 
-    input {
-        font-family: $bodoniBook;
-        font-style: italic;
-        border:1px black solid;
-        padding:25px 10px;
-      
-         &:focus{
+        input {
+            font-family: $bodoniBook;
+            font-style: italic;
+            border:1px black solid;
+            padding:25px 10px;
+
+            &:focus{
                 outline: 2px solid $border-color;
                 box-shadow: none;
             }
-    }
+        }
+        //input ends
 
-    input::placeholder,
-   {
-        font-family: $bodoniBook;
-        font-style: italic;
-        color:black;
-    }
-    
-    a{
-       right:20px;
-      
-            
-    }
+        input::placeholder,
+        {
+            font-family: $bodoniBook;
+            font-style: italic;
+            color:black;
+        }
 
-    .trends-item{
+        a{
+            right:40px;
+
+        }
+
 
     }
+    //form ends
 }
-}
+//trends ends
 
 
 
 @media(min-width:768px){
-    
+
     .trends{
         margin-bottom:0;
-    .about-description{
-  
-        h4{
-          
-            @include h4($font-size:3.0rem);
-             text-align: left;
+
+        .about-description{
+
+            h4{
+
+                @include h4($font-size:3.0rem);
+                text-align: left;
+            }
+
+            p{
+                text-align: left;
+            }
         }
 
-        p{
-            text-align: left;
+        form{
+            padding-right:0;
+            padding-left:0;
+
         }
-    }
 
-    form{
-        padding-right:0;
-        padding-left:0;
 
     }
-
-  
 }
-}
+//768 breakpoint ends
 
 @media(min-width:992px){
-    
-    .trends{
-        margin-bottom:0;
-    .about-description{
-  
-        h4{
-          
-            @include h4($font-size:4.4rem);
-             text-align: left;
-        }
 
-        p{
-            text-align: left;
-            font-size:20px;
-        }
+
+    .lead-section{
+        padding:283px 0 284px !important;
+        margin-bottom:91px !important;
     }
 
-  
-  
+    .trends{
 
-}
 
-  
+        .no-hover {
+            padding-top:0px;
+            margin-bottom:0px;
+            &:hover {
+                padding-top: initial !important;
+                transition: none !important;
+            }
+        }
+
+        .about-description{
+            margin-bottom:143px;
+            h4{
+
+                @include h4($font-size:4.4rem);
+                text-align: left;
+            }
+
+            p{
+                text-align: left;
+                font-size:20px;
+            }
+               figure{
+            overflow:hidden;
+            img{
+                @include scalable-hover();
+            }
+            
+        }
+
+        }
+        //about description ends
+
+        form {
+
+            input{
+                margin-bottom:43px !important;
+            }
+
+            a{
+                right:20px;
+                top:15px;
+            }
+
+        }
+        //form ends
+
+    }
+    //trends ends
 }
+// 992px breakpoint ends
+
+
+
 
 
 

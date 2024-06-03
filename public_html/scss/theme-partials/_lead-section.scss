@@ -22,7 +22,8 @@ $title-color:  #FFFFFF;
 @media (min-width:768px){
 
     .lead-section{
-        padding:218px 0 269px;
+        padding:218px 0 269px !important;
+        
 
         h1{
             font-size: 6.0rem;

@@ -1,13 +1,35 @@
 .lead-section{
-    margin-bottom:0;
+  
+   margin-bottom:0 !important;
     .container{
-        padding-top:100px;
+        padding-top:0px;
         a{
             @include button-style();
             color:white;
             border-color: white;
+            margin-bottom:0;
+        }
+    }//container-neds
+}//lead-section ends
+
+
+
+
+@media (min-width:992px){
+.lead-section{
+   padding:277px 0 ;
+   margin-bottom:0 !important;
+    .container{
+        padding-top:0px;
+        a{
+            @include button-style();
+            color:white;
+            border-color: white;
+            margin-bottom:0;
         }
     }
-}
+}//lead-section ends
+
+}//992px breakpoint-ends 
 
 

@@ -1,16 +1,10 @@
 
 .single-service{
 
-  
-    .single-service-description {
-
-        h3{
-            @include h3(2.0rem, 0 0 0 0, 3.0rem);
-
-        }
-
-    }
+padding-top:20px;
+   
 }//single service ends
+
 
 
 .blog-page-description{
@@ -44,10 +38,10 @@
             }
 
         }
-    }
-    //tags ends
-}
-//blog page description ends
+    }//tags ends
+    
+}//blog page description ends
+
 
 @media (min-width:768px){
 
@@ -55,6 +49,7 @@
 
         figure{
             overflow:hidden;
+
             img{
                 @include scalable-hover();
             }
@@ -63,23 +58,27 @@
     }
 }//768px min-width ends
 
+
 @media (min-width:992px){
     .single-service{
-
+        padding:165px 0 110px !important;
 
         .single-service-description {
 
             h3{
                 @include h3(3.4rem, 0 0 0 0, 5.0rem);
+            
 
             }
 
             p{
                 font-size:2.0rem;
+                height:auto !important;
             }
 
         }
     }//single-service-description ends
+    
 
     figure{
         padding-bottom:74px !important;
@@ -97,4 +96,13 @@
 
     }//blog-page-desctiption ends
     
+   .tags{
+        margin-bottom:275px !important;
+        p{
+            &:nth-child(1){
+                margin-bottom:19px;
+            }
+
+        }
+    }
 }//992px min-width ends
